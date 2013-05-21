@@ -26,11 +26,11 @@ namespace Modulo_17.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"|DataDirectory|\\ESCOLA DE NATAÇAO." +
-            "accdb\";Persist Security Info=True")]
-        public string ESCOLA_DE_NATAÇAOConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\Escola_de_natacao.a" +
+            "ccdb;Persist Security Info=True")]
+        public string Escola_de_natacaoConnectionString {
             get {
-                return ((string)(this["ESCOLA_DE_NATAÇAOConnectionString"]));
+                return ((string)(this["Escola_de_natacaoConnectionString"]));
             }
         }
     }
