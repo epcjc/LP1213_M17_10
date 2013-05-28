@@ -33,5 +33,16 @@ namespace Modulo_17.Properties {
                 return ((string)(this["Escola_de_natacaoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Escola_Natacao.mdf;Inte" +
+            "grated Security=True;User Instance=True")]
+        public string Escola_NatacaoConnectionString {
+            get {
+                return ((string)(this["Escola_NatacaoConnectionString"]));
+            }
+        }
     }
 }

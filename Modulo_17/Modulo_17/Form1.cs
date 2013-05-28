@@ -13,7 +13,7 @@ namespace Modulo_17
     public partial class Form1 : Form
     {
         SqlConnection sqlConn;
-        private string strConn = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Escola_de_natacao.accdb;Persist Security Info=True";
+        private string strConn = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Escola_Natacao.mdf;Integrated Security=True;User Instance=True";
         private string _Sql = string.Empty;
 
         public bool logado = false;

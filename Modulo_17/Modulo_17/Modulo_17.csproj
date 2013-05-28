@@ -67,10 +67,10 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Escola_de_natacaoDataSet.Designer.cs">
+    <Compile Include="Escola_NatacaoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Escola_de_natacaoDataSet.xsd</DependentUpon>
+      <DependentUpon>Escola_NatacaoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -92,6 +92,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inicial.resx">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -102,16 +105,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
-    <None Include="Escola_de_natacaoDataSet.xsc">
-      <DependentUpon>Escola_de_natacaoDataSet.xsd</DependentUpon>
+    <None Include="Escola_NatacaoDataSet.xsc">
+      <DependentUpon>Escola_NatacaoDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Escola_de_natacaoDataSet.xsd">
+    <None Include="Escola_NatacaoDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Escola_de_natacaoDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Escola_NatacaoDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Escola_de_natacaoDataSet.xss">
-      <DependentUpon>Escola_de_natacaoDataSet.xsd</DependentUpon>
+    <None Include="Escola_NatacaoDataSet.xss">
+      <DependentUpon>Escola_NatacaoDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,8 +159,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Escola_de_natacao.accdb">
+    <Content Include="Escola_Natacao.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Escola_Natacao_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Escola_Natacao.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
