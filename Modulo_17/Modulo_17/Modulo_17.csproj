@@ -84,6 +84,18 @@
     <Compile Include="Inicial.Designer.cs">
       <DependentUpon>Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inserir_Alunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserir_Alunos.Designer.cs">
+      <DependentUpon>Inserir_Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inserir_Turmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserir_Turmas.Designer.cs">
+      <DependentUpon>Inserir_Turmas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
@@ -94,6 +106,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inserir_Alunos.resx">
+      <DependentUpon>Inserir_Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inserir_Turmas.resx">
+      <DependentUpon>Inserir_Turmas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
