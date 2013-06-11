@@ -40,7 +40,18 @@ namespace Modulo_17
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.alunosTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue));
+            //this.alunosTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue));
+            try
+            {
+
+                this.alunosTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue));
+                MessageBox.Show("Inserido com Sucesso");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
