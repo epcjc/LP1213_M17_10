@@ -1,6 +1,6 @@
 ﻿namespace Modulo_17
 {
-    partial class Alunos
+    partial class Professores
     {
         /// <summary>
         /// Required designer variable.
@@ -30,98 +30,87 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataTable1DataGridView = new System.Windows.Forms.DataGridView();
+            this.escola_NatacaoDataSet = new Modulo_17.Escola_NatacaoDataSet();
+            this.professoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.professoresTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.ProfessoresTableAdapter();
+            this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
+            this.professoresDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.escola_NatacaoDataSet = new Modulo_17.Escola_NatacaoDataSet();
-            this.alunosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.alunosTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.AlunosTableAdapter();
-            this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
-            this.dataTable1TableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.DataTable1TableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1DataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professoresDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.dataTable1DataGridView);
+            this.panel1.Controls.Add(this.professoresDataGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(622, 306);
+            this.panel1.Size = new System.Drawing.Size(613, 373);
             this.panel1.TabIndex = 0;
-            // 
-            // dataTable1DataGridView
-            // 
-            this.dataTable1DataGridView.AutoGenerateColumns = false;
-            this.dataTable1DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataTable1DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.dataTable1DataGridView.DataSource = this.dataTable1BindingSource;
-            this.dataTable1DataGridView.Location = new System.Drawing.Point(3, 3);
-            this.dataTable1DataGridView.Name = "dataTable1DataGridView";
-            this.dataTable1DataGridView.Size = new System.Drawing.Size(616, 178);
-            this.dataTable1DataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "aluno";
-            this.dataGridViewTextBoxColumn1.HeaderText = "aluno";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "descricao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "descricao";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataTable1BindingSource
-            // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.escola_NatacaoDataSet;
             // 
             // escola_NatacaoDataSet
             // 
             this.escola_NatacaoDataSet.DataSetName = "Escola_NatacaoDataSet";
             this.escola_NatacaoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // alunosBindingSource
+            // professoresBindingSource
             // 
-            this.alunosBindingSource.DataMember = "Alunos";
-            this.alunosBindingSource.DataSource = this.escola_NatacaoDataSet;
+            this.professoresBindingSource.DataMember = "Professores";
+            this.professoresBindingSource.DataSource = this.escola_NatacaoDataSet;
             // 
-            // alunosTableAdapter
+            // professoresTableAdapter
             // 
-            this.alunosTableAdapter.ClearBeforeFill = true;
+            this.professoresTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.AlunosTableAdapter = this.alunosTableAdapter;
+            this.tableAdapterManager.AlunosTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.HorariosTurmaTableAdapter = null;
-            this.tableAdapterManager.ProfessoresTableAdapter = null;
+            this.tableAdapterManager.ProfessoresTableAdapter = this.professoresTableAdapter;
             this.tableAdapterManager.TecnicasTableAdapter = null;
             this.tableAdapterManager.TemposTableAdapter = null;
             this.tableAdapterManager.TurmasTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UtilizadoresTableAdapter = null;
             // 
-            // dataTable1TableAdapter
+            // professoresDataGridView
             // 
-            this.dataTable1TableAdapter.ClearBeforeFill = true;
+            this.professoresDataGridView.AutoGenerateColumns = false;
+            this.professoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.professoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.professoresDataGridView.DataSource = this.professoresBindingSource;
+            this.professoresDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.professoresDataGridView.Name = "professoresDataGridView";
+            this.professoresDataGridView.Size = new System.Drawing.Size(430, 123);
+            this.professoresDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_professor";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id_professor";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "professor";
+            this.dataGridViewTextBoxColumn2.HeaderText = "professor";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 187);
+            this.button1.Location = new System.Drawing.Point(12, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -131,7 +120,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(535, 187);
+            this.button2.Location = new System.Drawing.Point(502, 219);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -139,20 +128,19 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Alunos
+            // Professores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 306);
+            this.ClientSize = new System.Drawing.Size(613, 373);
             this.Controls.Add(this.panel1);
-            this.Name = "Alunos";
-            this.Text = "Alunos";
-            this.Load += new System.EventHandler(this.Alunos_Load);
+            this.Name = "Professores";
+            this.Text = "Professores";
+            this.Load += new System.EventHandler(this.Professores_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professoresDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,17 +149,13 @@
 
         private System.Windows.Forms.Panel panel1;
         private Escola_NatacaoDataSet escola_NatacaoDataSet;
-        private System.Windows.Forms.BindingSource alunosBindingSource;
-        private Escola_NatacaoDataSetTableAdapters.AlunosTableAdapter alunosTableAdapter;
+        private System.Windows.Forms.BindingSource professoresBindingSource;
+        private Escola_NatacaoDataSetTableAdapters.ProfessoresTableAdapter professoresTableAdapter;
         private Escola_NatacaoDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingSource dataTable1BindingSource;
-        private Escola_NatacaoDataSetTableAdapters.DataTable1TableAdapter dataTable1TableAdapter;
-        private System.Windows.Forms.DataGridView dataTable1DataGridView;
+        private System.Windows.Forms.DataGridView professoresDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-
-
+        private System.Windows.Forms.Button button1;
     }
 }

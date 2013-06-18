@@ -105,5 +105,10 @@ namespace Modulo_17
         {
 
         }
+
+        private void textBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

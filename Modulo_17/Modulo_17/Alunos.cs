@@ -42,5 +42,20 @@ namespace Modulo_17
             this.tableAdapterManager.UpdateAll(this.escola_NatacaoDataSet);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Inserir_Alunos frm = new Inserir_Alunos();
+            frm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Inicial nf = new Inicial();//Object of the form that you want to open
+            this.Hide();//Hide cirrent form.
+            nf.Show();//Display the next form window
+                        
+
+        }
     }
 }

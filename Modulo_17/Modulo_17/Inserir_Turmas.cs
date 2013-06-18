@@ -59,5 +59,10 @@ namespace Modulo_17
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

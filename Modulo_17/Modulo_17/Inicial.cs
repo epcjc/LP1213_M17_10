@@ -33,7 +33,35 @@ namespace Modulo_17
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Turmas nf = new Turmas();//Object of the form that you want to open
+            this.Hide();//Hide cirrent form.
+            nf.Show();//Display the next form window
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Alunos nf = new Alunos();//Object of the form that you want to open
+            this.Hide();//Hide cirrent form.
+            nf.Show();//Display the next form window
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Professores nf = new Professores();//Object of the form that you want to open
+            this.Hide();//Hide cirrent form.
+            nf.Show();//Display the next form window
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AboutBox1 nf = new AboutBox1();//Object of the form that you want to open
+            this.Hide();//Hide cirrent form.
+            nf.Show();//Display the next form window
         }
     }
 }
