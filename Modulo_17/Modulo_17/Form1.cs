@@ -90,8 +90,9 @@ namespace Modulo_17
         {
             if (logar())
             {
-                Inicial frm = new Inicial();
-                frm.Show();
+                Inicial nf = new Inicial();//Object of the form that you want to open
+                this.Hide();//Hide cirrent form.
+                nf.Show();//Display the next form window
             }
             else
             {
