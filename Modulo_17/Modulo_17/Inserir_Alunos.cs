@@ -45,8 +45,19 @@ namespace Modulo_17
             {
 
                 this.alunosTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue));
-                MessageBox.Show("Inserido com Sucesso");
+                if (textBox1.Text == "")
+                {
+                    errorProvider1.SetError(textBox1, "Preencher Nome");
+                }
+                else
+                {
+                    errorProvider1.Dispose(); MessageBox.Show("Inserido com Sucesso");
+                }
+                //MessageBox.Show("Inserido com Sucesso");
+                
+                
 
+               
             }
             catch (Exception ex)
             {

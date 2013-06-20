@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Modulo_17
 {
-    public partial class Turmas : Form
+    public partial class Eliminar_Turma : Form
     {
-        public Turmas()
+        public Eliminar_Turma()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Modulo_17
 
         }
 
-        private void Turmas_Load(object sender, EventArgs e)
+        private void Eliminar_Turma_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'escola_NatacaoDataSet.Turmas' table. You can move, or remove it, as needed.
             this.turmasTableAdapter.Fill(this.escola_NatacaoDataSet.Turmas);
@@ -33,21 +33,9 @@ namespace Modulo_17
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Inserir_Turmas frm = new Inserir_Turmas();
-            frm.ShowDialog();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
             Inicial nf = new Inicial();//Object of the form that you want to open
             this.Hide();//Hide cirrent form.
             nf.Show();//Display the next form window
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Eliminar_Turma frm = new Eliminar_Turma();
-            frm.ShowDialog();
         }
     }
 }

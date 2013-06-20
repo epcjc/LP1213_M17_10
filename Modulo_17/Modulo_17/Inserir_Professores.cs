@@ -23,8 +23,17 @@ namespace Modulo_17
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.professoresTableAdapter.Insert(this.textBox1.Text);
-            MessageBox.Show("Inserido com Sucesso");
+           
+            if (textBox1.Text == "")
+            {
+                errorProvider1.SetError(textBox1, "Preencher Nome");
+            }
+            else
+            {
+                this.professoresTableAdapter.Insert(this.textBox1.Text);
+                errorProvider1.Dispose(); MessageBox.Show("Inserido com Sucesso");
+            }
+            //MessageBox.Show("Inserido com Sucesso");
         }
 
         private void professoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -40,6 +49,11 @@ namespace Modulo_17
             // TODO: This line of code loads data into the 'escola_NatacaoDataSet.Professores' table. You can move, or remove it, as needed.
             this.professoresTableAdapter.Fill(this.escola_NatacaoDataSet.Professores);
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
