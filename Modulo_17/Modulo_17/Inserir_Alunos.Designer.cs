@@ -42,10 +42,12 @@
             this.alunosTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.AlunosTableAdapter();
             this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
             this.turmasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -157,6 +159,10 @@
             // 
             this.turmasTableAdapter.ClearBeforeFill = true;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Inserir_Alunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +177,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,5 +197,6 @@
         private System.Windows.Forms.Label label1;
         private Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter turmasTableAdapter;
         private System.Windows.Forms.BindingSource turmasBindingSource;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

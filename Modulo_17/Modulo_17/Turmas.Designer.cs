@@ -30,25 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.escola_NatacaoDataSet = new Modulo_17.Escola_NatacaoDataSet();
-            this.turmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.turmasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter();
-            this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.turmasDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.turmasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.escola_NatacaoDataSet = new Modulo_17.Escola_NatacaoDataSet();
+            this.turmasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter();
+            this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.turmasDataGridView);
@@ -58,31 +60,25 @@
             this.panel1.Size = new System.Drawing.Size(651, 396);
             this.panel1.TabIndex = 0;
             // 
-            // escola_NatacaoDataSet
+            // button2
             // 
-            this.escola_NatacaoDataSet.DataSetName = "Escola_NatacaoDataSet";
-            this.escola_NatacaoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.button2.Location = new System.Drawing.Point(564, 216);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // turmasBindingSource
+            // button1
             // 
-            this.turmasBindingSource.DataMember = "Turmas";
-            this.turmasBindingSource.DataSource = this.escola_NatacaoDataSet;
-            // 
-            // turmasTableAdapter
-            // 
-            this.turmasTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AlunosTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.HorariosTurmaTableAdapter = null;
-            this.tableAdapterManager.ProfessoresTableAdapter = null;
-            this.tableAdapterManager.TecnicasTableAdapter = null;
-            this.tableAdapterManager.TemposTableAdapter = null;
-            this.tableAdapterManager.TurmasTableAdapter = this.turmasTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UtilizadoresTableAdapter = null;
+            this.button1.Location = new System.Drawing.Point(12, 215);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Inserir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // turmasDataGridView
             // 
@@ -124,25 +120,41 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "id_tecnica_atual";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // button1
+            // turmasBindingSource
             // 
-            this.button1.Location = new System.Drawing.Point(3, 216);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Inserir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.turmasBindingSource.DataMember = "Turmas";
+            this.turmasBindingSource.DataSource = this.escola_NatacaoDataSet;
             // 
-            // button2
+            // escola_NatacaoDataSet
             // 
-            this.button2.Location = new System.Drawing.Point(564, 216);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Menu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.escola_NatacaoDataSet.DataSetName = "Escola_NatacaoDataSet";
+            this.escola_NatacaoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // turmasTableAdapter
+            // 
+            this.turmasTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AlunosTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.HorariosTurmaTableAdapter = null;
+            this.tableAdapterManager.ProfessoresTableAdapter = null;
+            this.tableAdapterManager.TecnicasTableAdapter = null;
+            this.tableAdapterManager.TemposTableAdapter = null;
+            this.tableAdapterManager.TurmasTableAdapter = this.turmasTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UtilizadoresTableAdapter = null;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(103, 215);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Turmas
             // 
@@ -154,9 +166,9 @@
             this.Text = "Turmas";
             this.Load += new System.EventHandler(this.Turmas_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,5 +187,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

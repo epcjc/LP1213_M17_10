@@ -73,6 +73,30 @@
     <Compile Include="Alunos.Designer.cs">
       <DependentUpon>Alunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Eliminar_Alunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Alunos.Designer.cs">
+      <DependentUpon>Eliminar_Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Professor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Professor.Designer.cs">
+      <DependentUpon>Eliminar_Professor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Turma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Turma.Designer.cs">
+      <DependentUpon>Eliminar_Turma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elimina_Aula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elimina_Aula.Designer.cs">
+      <DependentUpon>Elimina_Aula.cs</DependentUpon>
+    </Compile>
     <Compile Include="Escola_NatacaoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -127,6 +151,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alunos.resx">
       <DependentUpon>Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Alunos.resx">
+      <DependentUpon>Eliminar_Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Professor.resx">
+      <DependentUpon>Eliminar_Professor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Turma.resx">
+      <DependentUpon>Eliminar_Turma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elimina_Aula.resx">
+      <DependentUpon>Elimina_Aula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

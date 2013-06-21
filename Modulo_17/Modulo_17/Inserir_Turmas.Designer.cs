@@ -46,11 +46,17 @@
             this.professoresTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.ProfessoresTableAdapter();
             this.tecnicasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TecnicasTableAdapter();
             this.turmasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tecnicasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -149,6 +155,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -189,6 +196,18 @@
             // 
             this.turmasTableAdapter.ClearBeforeFill = true;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
             // Inserir_Turmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,6 +223,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tecnicasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,5 +249,8 @@
         private Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter turmasTableAdapter;
         private Escola_NatacaoDataSetTableAdapters.ProfessoresTableAdapter professoresTableAdapter;
         private System.Windows.Forms.BindingSource professoresBindingSource;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
     }
 }

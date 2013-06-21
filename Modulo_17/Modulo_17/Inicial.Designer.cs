@@ -37,12 +37,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
@@ -98,7 +100,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(458, 226);
+            this.button3.Location = new System.Drawing.Point(458, 289);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(214, 23);
             this.button3.TabIndex = 7;
@@ -126,6 +128,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(458, 222);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(214, 23);
+            this.button6.TabIndex = 12;
+            this.button6.Text = "Turmas";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +163,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
 
 
     }

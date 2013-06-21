@@ -45,24 +45,32 @@ namespace Modulo_17
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.turmasTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(comboBox2.SelectedValue));
 
-            try
+            if (textBox1.Text == "")
             {
-
+                errorProvider1.SetError(textBox1, "Preencher Descrição");
+            }
+            
+            else
+            {
                 this.turmasTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(comboBox2.SelectedValue));
-                MessageBox.Show("Inserido com Sucesso");
+                errorProvider1.Dispose(); MessageBox.Show("Inserido com Sucesso");
+            }
+            //MessageBox.Show("Inserido com Sucesso");
+                
+                
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

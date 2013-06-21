@@ -57,5 +57,11 @@ namespace Modulo_17
                         
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Eliminar_Alunos frm = new Eliminar_Alunos();
+            frm.ShowDialog();
+        }
     }
 }
