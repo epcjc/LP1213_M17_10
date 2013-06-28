@@ -76,6 +76,12 @@
     <Compile Include="Alunos.Designer.cs">
       <DependentUpon>Alunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aulas.Designer.cs">
+      <DependentUpon>Aulas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Eliminar_Alunos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="Inserir_Alunos.Designer.cs">
       <DependentUpon>Inserir_Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inserir_Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserir_Aulas.Designer.cs">
+      <DependentUpon>Inserir_Aulas.cs</DependentUpon>
     </Compile>
     <Compile Include="Inserir_Professores.cs">
       <SubType>Form</SubType>
@@ -174,6 +186,9 @@
     <EmbeddedResource Include="Alunos.resx">
       <DependentUpon>Alunos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Aulas.resx">
+      <DependentUpon>Aulas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eliminar_Alunos.resx">
       <DependentUpon>Eliminar_Alunos.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inserir_Alunos.resx">
       <DependentUpon>Inserir_Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inserir_Aulas.resx">
+      <DependentUpon>Inserir_Aulas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inserir_Professores.resx">
       <DependentUpon>Inserir_Professores.cs</DependentUpon>
