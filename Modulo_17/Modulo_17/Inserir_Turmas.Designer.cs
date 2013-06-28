@@ -49,6 +49,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
@@ -84,6 +85,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(371, 21);
             this.comboBox1.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.comboBox1, "Selecione Professor");
             this.comboBox1.ValueMember = "id_professor";
             // 
             // professoresBindingSource
@@ -132,6 +134,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(371, 21);
             this.comboBox2.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.comboBox2, "Selecione Tecnica");
             this.comboBox2.ValueMember = "id_tecnica";
             // 
             // tecnicasBindingSource
@@ -145,6 +148,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(371, 20);
             this.textBox1.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.textBox1, "Inserir Nome da Turma");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
@@ -252,5 +256,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

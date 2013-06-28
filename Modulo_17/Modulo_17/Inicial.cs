@@ -61,9 +61,8 @@ namespace Modulo_17
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AboutBox1 nf = new AboutBox1();//Object of the form that you want to open
-            this.Hide();//Hide cirrent form.
-            nf.Show();//Display the next form window
+            AboutBox1 frm = new AboutBox1();
+            frm.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)

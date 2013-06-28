@@ -49,8 +49,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -140,6 +143,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_Alunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_Alunos.Designer.cs">
+      <DependentUpon>report_Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_professores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_professores.Designer.cs">
+      <DependentUpon>report_professores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_tecnicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_tecnicas.Designer.cs">
+      <DependentUpon>report_tecnicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Turmas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +170,7 @@
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alunos.rdlc" />
     <EmbeddedResource Include="Alunos.resx">
       <DependentUpon>Alunos.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +201,7 @@
     <EmbeddedResource Include="Inserir_Turmas.resx">
       <DependentUpon>Inserir_Turmas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Professores.rdlc" />
     <EmbeddedResource Include="Professores.resx">
       <DependentUpon>Professores.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +214,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="report_Alunos.resx">
+      <DependentUpon>report_Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_professores.resx">
+      <DependentUpon>report_professores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_tecnicas.resx">
+      <DependentUpon>report_tecnicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tecnicasd.rdlc" />
     <EmbeddedResource Include="Turmas.resx">
       <DependentUpon>Turmas.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +238,9 @@
     </None>
     <None Include="Escola_NatacaoDataSet.xss">
       <DependentUpon>Escola_NatacaoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Natacao.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
