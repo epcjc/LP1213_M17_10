@@ -171,7 +171,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AboutBox1";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.AboutBox1_HelpButtonClicked);
+<<<<<<< HEAD
             this.Load += new System.EventHandler(this.AboutBox1_Load);
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             this.tableLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();

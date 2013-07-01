@@ -505,6 +505,7 @@ FROM            Professores INNER JOIN
             </Mappings>
             <Sources />
           </TableAdapter>
+<<<<<<< HEAD
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable5TableAdapter" GeneratorDataComponentClassName="DataTable5TableAdapter" Name="DataTable5" UserDataComponentName="DataTable5TableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -530,6 +531,8 @@ FROM            inserir_aulas INNER JOIN
             </Mappings>
             <Sources />
           </TableAdapter>
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
         </Tables>
         <Sources />
       </DataSource>
@@ -692,6 +695,7 @@ FROM            inserir_aulas INNER JOIN
         <xs:element name="DataTable3" msprop:Generator_TableClassName="DataTable3DataTable" msprop:Generator_TableVarName="tableDataTable3" msprop:Generator_TablePropName="DataTable3" msprop:Generator_RowDeletingName="DataTable3RowDeleting" msprop:Generator_RowChangingName="DataTable3RowChanging" msprop:Generator_RowEvHandlerName="DataTable3RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable3RowDeleted" msprop:Generator_UserTableName="DataTable3" msprop:Generator_RowChangedName="DataTable3RowChanged" msprop:Generator_RowEvArgName="DataTable3RowChangeEvent" msprop:Generator_RowClassName="DataTable3Row">
           <xs:complexType>
             <xs:sequence>
+<<<<<<< HEAD
               <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -739,6 +743,8 @@ FROM            inserir_aulas INNER JOIN
         <xs:element name="Aulas" msprop:Generator_TableClassName="AulasDataTable" msprop:Generator_TableVarName="tableAulas" msprop:Generator_RowChangedName="AulasRowChanged" msprop:Generator_TablePropName="Aulas" msprop:Generator_RowDeletingName="AulasRowDeleting" msprop:Generator_RowChangingName="AulasRowChanging" msprop:Generator_RowEvHandlerName="AulasRowChangeEventHandler" msprop:Generator_RowDeletedName="AulasRowDeleted" msprop:Generator_RowClassName="AulasRow" msprop:Generator_UserTableName="Aulas" msprop:Generator_RowEvArgName="AulasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
               <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -753,6 +759,7 @@ FROM            inserir_aulas INNER JOIN
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+<<<<<<< HEAD
               <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia" type="xs:dateTime" />
               <xs:element name="hora_inicio" msprop:Generator_ColumnVarNameInTable="columnhora_inicio" msprop:Generator_ColumnPropNameInRow="hora_inicio" msprop:Generator_ColumnPropNameInTable="hora_inicioColumn" msprop:Generator_UserColumnName="hora_inicio" type="xs:duration" />
             </xs:sequence>
@@ -766,6 +773,29 @@ FROM            inserir_aulas INNER JOIN
               <xs:element name="id_professor" msprop:Generator_ColumnVarNameInTable="columnid_professor" msprop:Generator_ColumnPropNameInRow="id_professor" msprop:Generator_ColumnPropNameInTable="id_professorColumn" msprop:Generator_UserColumnName="id_professor" type="xs:int" />
               <xs:element name="id_hora" msprop:Generator_ColumnVarNameInTable="columnid_hora" msprop:Generator_ColumnPropNameInRow="id_hora" msprop:Generator_ColumnPropNameInTable="id_horaColumn" msprop:Generator_UserColumnName="id_hora" type="xs:int" />
               <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia">
+=======
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable4" msprop:Generator_TableClassName="DataTable4DataTable" msprop:Generator_TableVarName="tableDataTable4" msprop:Generator_TablePropName="DataTable4" msprop:Generator_RowDeletingName="DataTable4RowDeleting" msprop:Generator_RowChangingName="DataTable4RowChanging" msprop:Generator_RowEvHandlerName="DataTable4RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable4RowDeleted" msprop:Generator_UserTableName="DataTable4" msprop:Generator_RowChangedName="DataTable4RowChanged" msprop:Generator_RowEvArgName="DataTable4RowChangeEvent" msprop:Generator_RowClassName="DataTable4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="professor" msprop:Generator_ColumnVarNameInTable="columnprofessor" msprop:Generator_ColumnPropNameInRow="professor" msprop:Generator_ColumnPropNameInTable="professorColumn" msprop:Generator_UserColumnName="professor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -775,12 +805,25 @@ FROM            inserir_aulas INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+<<<<<<< HEAD
         <xs:element name="DataTable5" msprop:Generator_TableClassName="DataTable5DataTable" msprop:Generator_TableVarName="tableDataTable5" msprop:Generator_TablePropName="DataTable5" msprop:Generator_RowDeletingName="DataTable5RowDeleting" msprop:Generator_RowChangingName="DataTable5RowChanging" msprop:Generator_RowEvHandlerName="DataTable5RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable5RowDeleted" msprop:Generator_UserTableName="DataTable5" msprop:Generator_RowChangedName="DataTable5RowChanged" msprop:Generator_RowEvArgName="DataTable5RowChangeEvent" msprop:Generator_RowClassName="DataTable5Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="hora_inicio" msprop:Generator_ColumnVarNameInTable="columnhora_inicio" msprop:Generator_ColumnPropNameInRow="hora_inicio" msprop:Generator_ColumnPropNameInTable="hora_inicioColumn" msprop:Generator_UserColumnName="hora_inicio" type="xs:duration" />
               <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia" type="xs:dateTime" />
               <xs:element name="id_aula" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_aula" msprop:Generator_ColumnPropNameInRow="id_aula" msprop:Generator_ColumnPropNameInTable="id_aulaColumn" msprop:Generator_UserColumnName="id_aula" type="xs:int" />
+=======
+        <xs:element name="Aulas" msprop:Generator_TableClassName="AulasDataTable" msprop:Generator_TableVarName="tableAulas" msprop:Generator_RowChangedName="AulasRowChanged" msprop:Generator_TablePropName="Aulas" msprop:Generator_RowDeletingName="AulasRowDeleting" msprop:Generator_RowChangingName="AulasRowChanging" msprop:Generator_RowEvHandlerName="AulasRowChangeEventHandler" msprop:Generator_RowDeletedName="AulasRowDeleted" msprop:Generator_RowClassName="AulasRow" msprop:Generator_UserTableName="Aulas" msprop:Generator_RowEvArgName="AulasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
               <xs:element name="professor" msprop:Generator_ColumnVarNameInTable="columnprofessor" msprop:Generator_ColumnPropNameInRow="professor" msprop:Generator_ColumnPropNameInTable="professorColumn" msprop:Generator_UserColumnName="professor">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -788,7 +831,23 @@ FROM            inserir_aulas INNER JOIN
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+<<<<<<< HEAD
               <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao">
+=======
+              <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia" type="xs:dateTime" />
+              <xs:element name="hora_inicio" msprop:Generator_ColumnVarNameInTable="columnhora_inicio" msprop:Generator_ColumnPropNameInRow="hora_inicio" msprop:Generator_ColumnPropNameInTable="hora_inicioColumn" msprop:Generator_UserColumnName="hora_inicio" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="inserir_aulas" msprop:Generator_TableClassName="inserir_aulasDataTable" msprop:Generator_TableVarName="tableinserir_aulas" msprop:Generator_RowChangedName="inserir_aulasRowChanged" msprop:Generator_TablePropName="inserir_aulas" msprop:Generator_RowDeletingName="inserir_aulasRowDeleting" msprop:Generator_RowChangingName="inserir_aulasRowChanging" msprop:Generator_RowEvHandlerName="inserir_aulasRowChangeEventHandler" msprop:Generator_RowDeletedName="inserir_aulasRowDeleted" msprop:Generator_RowClassName="inserir_aulasRow" msprop:Generator_UserTableName="inserir_aulas" msprop:Generator_RowEvArgName="inserir_aulasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_aula" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_aula" msprop:Generator_ColumnPropNameInRow="id_aula" msprop:Generator_ColumnPropNameInTable="id_aulaColumn" msprop:Generator_UserColumnName="id_aula" type="xs:int" />
+              <xs:element name="id_turma" msprop:Generator_ColumnVarNameInTable="columnid_turma" msprop:Generator_ColumnPropNameInRow="id_turma" msprop:Generator_ColumnPropNameInTable="id_turmaColumn" msprop:Generator_UserColumnName="id_turma" type="xs:int" />
+              <xs:element name="id_professor" msprop:Generator_ColumnVarNameInTable="columnid_professor" msprop:Generator_ColumnPropNameInRow="id_professor" msprop:Generator_ColumnPropNameInTable="id_professorColumn" msprop:Generator_UserColumnName="id_professor" type="xs:int" />
+              <xs:element name="id_hora" msprop:Generator_ColumnVarNameInTable="columnid_hora" msprop:Generator_ColumnPropNameInRow="id_hora" msprop:Generator_ColumnPropNameInTable="id_horaColumn" msprop:Generator_UserColumnName="id_hora" type="xs:int" />
+              <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia">
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />

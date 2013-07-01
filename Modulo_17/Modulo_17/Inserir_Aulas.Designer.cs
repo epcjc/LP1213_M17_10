@@ -45,13 +45,19 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.professoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+<<<<<<< HEAD
             this.temposBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             this.temposBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.inserir_aulasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inserir_aulasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.inserir_aulasTableAdapter();
+<<<<<<< HEAD
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             descricaoLabel = new System.Windows.Forms.Label();
             professorLabel = new System.Windows.Forms.Label();
             diaLabel = new System.Windows.Forms.Label();
@@ -60,10 +66,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.aulasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.temposBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.temposBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inserir_aulasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.temposBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inserir_aulasBindingSource)).BeginInit();
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             this.SuspendLayout();
             // 
             // descricaoLabel
@@ -175,7 +186,11 @@
             // 
             // comboBox3
             // 
+<<<<<<< HEAD
             this.comboBox3.DataSource = this.temposBindingSource1;
+=======
+            this.comboBox3.DataSource = this.temposBindingSource;
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             this.comboBox3.DisplayMember = "hora_inicio";
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(107, 170);
@@ -184,11 +199,14 @@
             this.comboBox3.TabIndex = 9;
             this.comboBox3.ValueMember = "id_tempo";
             // 
+<<<<<<< HEAD
             // temposBindingSource1
             // 
             this.temposBindingSource1.DataMember = "Tempos";
             this.temposBindingSource1.DataSource = this.escola_NatacaoDataSet;
             // 
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             // temposBindingSource
             // 
             this.temposBindingSource.DataMember = "Tempos";
@@ -207,7 +225,11 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
+<<<<<<< HEAD
             this.button1.Text = "Inserir";
+=======
+            this.button1.Text = "button1";
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -220,10 +242,13 @@
             // 
             this.inserir_aulasTableAdapter.ClearBeforeFill = true;
             // 
+<<<<<<< HEAD
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             // Inserir_Aulas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,10 +270,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.aulasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.temposBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.temposBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inserir_aulasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.temposBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inserir_aulasBindingSource)).EndInit();
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,7 +303,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource inserir_aulasBindingSource;
         private Escola_NatacaoDataSetTableAdapters.inserir_aulasTableAdapter inserir_aulasTableAdapter;
+<<<<<<< HEAD
         private System.Windows.Forms.BindingSource temposBindingSource1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
     }
 }

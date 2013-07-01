@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Aulas));
             this.button1 = new System.Windows.Forms.Button();
@@ -281,10 +282,15 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "descricao";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
+=======
+            this.SuspendLayout();
+            // 
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
             // Aulas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(655, 340);
             this.Controls.Add(this.dataTable5DataGridView);
             this.Controls.Add(this.dataTable5BindingNavigator);
@@ -301,10 +307,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTable5DataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+=======
+            this.ClientSize = new System.Drawing.Size(375, 263);
+            this.Name = "Aulas";
+            this.Text = "Aulas";
+            this.ResumeLayout(false);
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
 
         }
 
         #endregion
+<<<<<<< HEAD
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -332,5 +345,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
 
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
     }
 }

@@ -15,6 +15,7 @@ namespace Modulo_17
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void Aulas_Load(object sender, EventArgs e)
         {
@@ -37,5 +38,7 @@ namespace Modulo_17
             this.Hide();//Hide cirrent form.
             nf.Show();//Display the next form window
         }
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
     }
 }

@@ -271,6 +271,9 @@
       <DependentUpon>Escola_NatacaoDataSet.xsd</DependentUpon>
     </None>
     <None Include="Modulo_17_TemporaryKey.pfx" />
+    <None Include="Natacao.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

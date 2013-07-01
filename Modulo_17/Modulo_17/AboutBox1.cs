@@ -113,17 +113,24 @@ namespace Modulo_17
 
         private void AboutBox1_HelpButtonClicked(object sender, CancelEventArgs e)
         {
+<<<<<<< HEAD
             Help.ShowHelp(this, "RELATORIO.chm");
+=======
+            Help.ShowHelp(this, "Natacao.chm");
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
         }
 
         private void okButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+<<<<<<< HEAD
 
         private void AboutBox1_Load(object sender, EventArgs e)
         {
 
         }
+=======
+>>>>>>> cd08b6074d381193eaeda0e14d67d91a7dfb89d0
     }
 }
