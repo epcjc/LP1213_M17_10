@@ -110,5 +110,20 @@ namespace Modulo_17
         {
 
         }
+
+        private void AboutBox1_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            Help.ShowHelp(this, "RELATORIO.chm");
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AboutBox1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -49,5 +49,11 @@ namespace Modulo_17
             Eliminar_Professor frm = new Eliminar_Professor();
             frm.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            report_professores frm = new report_professores();
+            frm.ShowDialog();
+        }
     }
 }

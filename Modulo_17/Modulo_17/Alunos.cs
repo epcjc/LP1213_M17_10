@@ -63,5 +63,11 @@ namespace Modulo_17
             Eliminar_Alunos frm = new Eliminar_Alunos();
             frm.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            report_Alunos frm = new report_Alunos();
+            frm.ShowDialog();
+        }
     }
 }

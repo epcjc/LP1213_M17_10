@@ -54,7 +54,9 @@ namespace Modulo_17
             else
             {
                 this.turmasTableAdapter.Insert(this.textBox1.Text, Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(comboBox2.SelectedValue));
-                errorProvider1.Dispose(); MessageBox.Show("Inserido com Sucesso");
+                errorProvider1.Dispose(); 
+                MessageBox.Show("Inserido com Sucesso");
+                this.Close();
             }
             //MessageBox.Show("Inserido com Sucesso");
                 

@@ -392,6 +392,144 @@ FROM            Alunos INNER JOIN
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable2TableAdapter" GeneratorDataComponentClassName="DataTable2TableAdapter" Name="DataTable2" UserDataComponentName="DataTable2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Turmas.descricao, Alunos.aluno
+FROM            Alunos INNER JOIN
+                         Turmas ON Alunos.id_turma = Turmas.id_turma</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="descricao" DataSetColumn="descricao" />
+              <Mapping SourceColumn="aluno" DataSetColumn="aluno" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable3TableAdapter" GeneratorDataComponentClassName="DataTable3TableAdapter" Name="DataTable3" UserDataComponentName="DataTable3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Turmas.descricao, Professores.professor
+FROM            Professores INNER JOIN
+                         Turmas ON Professores.id_professor = Turmas.id_professor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="descricao" DataSetColumn="descricao" />
+              <Mapping SourceColumn="professor" DataSetColumn="professor" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable4TableAdapter" GeneratorDataComponentClassName="DataTable4TableAdapter" Name="DataTable4" UserDataComponentName="DataTable4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Professores.professor, Tecnicas.nome, Turmas.descricao
+FROM            Turmas INNER JOIN
+                         Professores ON Turmas.id_professor = Professores.id_professor INNER JOIN
+                         Tecnicas ON Turmas.id_tecnica_atual = Tecnicas.id_tecnica</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="professor" DataSetColumn="professor" />
+              <Mapping SourceColumn="nome" DataSetColumn="nome" />
+              <Mapping SourceColumn="descricao" DataSetColumn="descricao" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AulasTableAdapter" GeneratorDataComponentClassName="AulasTableAdapter" Name="Aulas" UserDataComponentName="AulasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Turmas.descricao, Professores.professor, HorariosTurma.dia, Tempos.hora_inicio
+FROM            Professores INNER JOIN
+                         Turmas ON Professores.id_professor = Turmas.id_professor INNER JOIN
+                         HorariosTurma ON Turmas.id_turma = HorariosTurma.id_turma INNER JOIN
+                         Tempos ON HorariosTurma.id_tempo = Tempos.id_tempo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="descricao" DataSetColumn="descricao" />
+              <Mapping SourceColumn="professor" DataSetColumn="professor" />
+              <Mapping SourceColumn="dia" DataSetColumn="dia" />
+              <Mapping SourceColumn="hora_inicio" DataSetColumn="hora_inicio" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="inserir_aulasTableAdapter" GeneratorDataComponentClassName="inserir_aulasTableAdapter" Name="inserir_aulas" UserDataComponentName="inserir_aulasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectName="dbo.inserir_aulas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [inserir_aulas] ([id_turma], [id_professor], [id_hora], [dia]) VALUES (@id_turma, @id_professor, @id_hora, @dia)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@id_turma" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_turma" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@id_professor" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_professor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@id_hora" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="id_hora" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@dia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="dia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_aula, id_turma, id_professor, id_hora, dia FROM inserir_aulas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_aula" DataSetColumn="id_aula" />
+              <Mapping SourceColumn="id_turma" DataSetColumn="id_turma" />
+              <Mapping SourceColumn="id_professor" DataSetColumn="id_professor" />
+              <Mapping SourceColumn="id_hora" DataSetColumn="id_hora" />
+              <Mapping SourceColumn="dia" DataSetColumn="dia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable5TableAdapter" GeneratorDataComponentClassName="DataTable5TableAdapter" Name="DataTable5" UserDataComponentName="DataTable5TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Escola_NatacaoConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Tempos.hora_inicio, HorariosTurma.dia, inserir_aulas.id_aula, Professores.professor, Turmas.descricao
+FROM            inserir_aulas INNER JOIN
+                         HorariosTurma ON inserir_aulas.id_turma = HorariosTurma.id_turma INNER JOIN
+                         Tempos ON inserir_aulas.id_hora = Tempos.id_tempo AND HorariosTurma.id_tempo = Tempos.id_tempo INNER JOIN
+                         Turmas ON inserir_aulas.id_turma = Turmas.id_turma AND HorariosTurma.id_turma = Turmas.id_turma INNER JOIN
+                         Professores ON inserir_aulas.id_professor = Professores.id_professor AND Turmas.id_professor = Professores.id_professor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="hora_inicio" DataSetColumn="hora_inicio" />
+              <Mapping SourceColumn="dia" DataSetColumn="dia" />
+              <Mapping SourceColumn="id_aula" DataSetColumn="id_aula" />
+              <Mapping SourceColumn="professor" DataSetColumn="professor" />
+              <Mapping SourceColumn="descricao" DataSetColumn="descricao" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -400,7 +538,7 @@ FROM            Alunos INNER JOIN
   <xs:element name="Escola_NatacaoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Escola_NatacaoDataSet" msprop:Generator_UserDSName="Escola_NatacaoDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Alunos" msprop:Generator_TableClassName="AlunosDataTable" msprop:Generator_TableVarName="tableAlunos" msprop:Generator_TablePropName="Alunos" msprop:Generator_RowDeletingName="AlunosRowDeleting" msprop:Generator_RowChangingName="AlunosRowChanging" msprop:Generator_RowEvHandlerName="AlunosRowChangeEventHandler" msprop:Generator_RowDeletedName="AlunosRowDeleted" msprop:Generator_UserTableName="Alunos" msprop:Generator_RowChangedName="AlunosRowChanged" msprop:Generator_RowEvArgName="AlunosRowChangeEvent" msprop:Generator_RowClassName="AlunosRow">
+        <xs:element name="Alunos" msprop:Generator_TableClassName="AlunosDataTable" msprop:Generator_TableVarName="tableAlunos" msprop:Generator_RowChangedName="AlunosRowChanged" msprop:Generator_TablePropName="Alunos" msprop:Generator_RowDeletingName="AlunosRowDeleting" msprop:Generator_RowChangingName="AlunosRowChanging" msprop:Generator_RowEvHandlerName="AlunosRowChangeEventHandler" msprop:Generator_RowDeletedName="AlunosRowDeleted" msprop:Generator_RowClassName="AlunosRow" msprop:Generator_UserTableName="Alunos" msprop:Generator_RowEvArgName="AlunosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_alunos" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_alunos" msprop:Generator_ColumnPropNameInRow="id_alunos" msprop:Generator_ColumnPropNameInTable="id_alunosColumn" msprop:Generator_UserColumnName="id_alunos" type="xs:int" />
@@ -415,7 +553,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="HorariosTurma" msprop:Generator_TableClassName="HorariosTurmaDataTable" msprop:Generator_TableVarName="tableHorariosTurma" msprop:Generator_TablePropName="HorariosTurma" msprop:Generator_RowDeletingName="HorariosTurmaRowDeleting" msprop:Generator_RowChangingName="HorariosTurmaRowChanging" msprop:Generator_RowEvHandlerName="HorariosTurmaRowChangeEventHandler" msprop:Generator_RowDeletedName="HorariosTurmaRowDeleted" msprop:Generator_UserTableName="HorariosTurma" msprop:Generator_RowChangedName="HorariosTurmaRowChanged" msprop:Generator_RowEvArgName="HorariosTurmaRowChangeEvent" msprop:Generator_RowClassName="HorariosTurmaRow">
+        <xs:element name="HorariosTurma" msprop:Generator_TableClassName="HorariosTurmaDataTable" msprop:Generator_TableVarName="tableHorariosTurma" msprop:Generator_RowChangedName="HorariosTurmaRowChanged" msprop:Generator_TablePropName="HorariosTurma" msprop:Generator_RowDeletingName="HorariosTurmaRowDeleting" msprop:Generator_RowChangingName="HorariosTurmaRowChanging" msprop:Generator_RowEvHandlerName="HorariosTurmaRowChangeEventHandler" msprop:Generator_RowDeletedName="HorariosTurmaRowDeleted" msprop:Generator_RowClassName="HorariosTurmaRow" msprop:Generator_UserTableName="HorariosTurma" msprop:Generator_RowEvArgName="HorariosTurmaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_turma" msprop:Generator_ColumnVarNameInTable="columnid_turma" msprop:Generator_ColumnPropNameInRow="id_turma" msprop:Generator_ColumnPropNameInTable="id_turmaColumn" msprop:Generator_UserColumnName="id_turma" type="xs:int" />
@@ -424,7 +562,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tecnicas" msprop:Generator_TableClassName="TecnicasDataTable" msprop:Generator_TableVarName="tableTecnicas" msprop:Generator_TablePropName="Tecnicas" msprop:Generator_RowDeletingName="TecnicasRowDeleting" msprop:Generator_RowChangingName="TecnicasRowChanging" msprop:Generator_RowEvHandlerName="TecnicasRowChangeEventHandler" msprop:Generator_RowDeletedName="TecnicasRowDeleted" msprop:Generator_UserTableName="Tecnicas" msprop:Generator_RowChangedName="TecnicasRowChanged" msprop:Generator_RowEvArgName="TecnicasRowChangeEvent" msprop:Generator_RowClassName="TecnicasRow">
+        <xs:element name="Tecnicas" msprop:Generator_TableClassName="TecnicasDataTable" msprop:Generator_TableVarName="tableTecnicas" msprop:Generator_RowChangedName="TecnicasRowChanged" msprop:Generator_TablePropName="Tecnicas" msprop:Generator_RowDeletingName="TecnicasRowDeleting" msprop:Generator_RowChangingName="TecnicasRowChanging" msprop:Generator_RowEvHandlerName="TecnicasRowChangeEventHandler" msprop:Generator_RowDeletedName="TecnicasRowDeleted" msprop:Generator_RowClassName="TecnicasRow" msprop:Generator_UserTableName="Tecnicas" msprop:Generator_RowEvArgName="TecnicasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_tecnica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_tecnica" msprop:Generator_ColumnPropNameInRow="id_tecnica" msprop:Generator_ColumnPropNameInTable="id_tecnicaColumn" msprop:Generator_UserColumnName="id_tecnica" type="xs:int" />
@@ -445,7 +583,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tempos" msprop:Generator_TableClassName="TemposDataTable" msprop:Generator_TableVarName="tableTempos" msprop:Generator_TablePropName="Tempos" msprop:Generator_RowDeletingName="TemposRowDeleting" msprop:Generator_RowChangingName="TemposRowChanging" msprop:Generator_RowEvHandlerName="TemposRowChangeEventHandler" msprop:Generator_RowDeletedName="TemposRowDeleted" msprop:Generator_UserTableName="Tempos" msprop:Generator_RowChangedName="TemposRowChanged" msprop:Generator_RowEvArgName="TemposRowChangeEvent" msprop:Generator_RowClassName="TemposRow">
+        <xs:element name="Tempos" msprop:Generator_TableClassName="TemposDataTable" msprop:Generator_TableVarName="tableTempos" msprop:Generator_RowChangedName="TemposRowChanged" msprop:Generator_TablePropName="Tempos" msprop:Generator_RowDeletingName="TemposRowDeleting" msprop:Generator_RowChangingName="TemposRowChanging" msprop:Generator_RowEvHandlerName="TemposRowChangeEventHandler" msprop:Generator_RowDeletedName="TemposRowDeleted" msprop:Generator_RowClassName="TemposRow" msprop:Generator_UserTableName="Tempos" msprop:Generator_RowEvArgName="TemposRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_tempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_tempo" msprop:Generator_ColumnPropNameInRow="id_tempo" msprop:Generator_ColumnPropNameInTable="id_tempoColumn" msprop:Generator_UserColumnName="id_tempo" type="xs:int" />
@@ -460,7 +598,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Turmas" msprop:Generator_TableClassName="TurmasDataTable" msprop:Generator_TableVarName="tableTurmas" msprop:Generator_TablePropName="Turmas" msprop:Generator_RowDeletingName="TurmasRowDeleting" msprop:Generator_RowChangingName="TurmasRowChanging" msprop:Generator_RowEvHandlerName="TurmasRowChangeEventHandler" msprop:Generator_RowDeletedName="TurmasRowDeleted" msprop:Generator_UserTableName="Turmas" msprop:Generator_RowChangedName="TurmasRowChanged" msprop:Generator_RowEvArgName="TurmasRowChangeEvent" msprop:Generator_RowClassName="TurmasRow">
+        <xs:element name="Turmas" msprop:Generator_TableClassName="TurmasDataTable" msprop:Generator_TableVarName="tableTurmas" msprop:Generator_RowChangedName="TurmasRowChanged" msprop:Generator_TablePropName="Turmas" msprop:Generator_RowDeletingName="TurmasRowDeleting" msprop:Generator_RowChangingName="TurmasRowChanging" msprop:Generator_RowEvHandlerName="TurmasRowChangeEventHandler" msprop:Generator_RowDeletedName="TurmasRowDeleted" msprop:Generator_RowClassName="TurmasRow" msprop:Generator_UserTableName="Turmas" msprop:Generator_RowEvArgName="TurmasRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_turma" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_turma" msprop:Generator_ColumnPropNameInRow="id_turma" msprop:Generator_ColumnPropNameInTable="id_turmaColumn" msprop:Generator_UserColumnName="id_turma" type="xs:int" />
@@ -476,7 +614,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Utilizadores" msprop:Generator_TableClassName="UtilizadoresDataTable" msprop:Generator_TableVarName="tableUtilizadores" msprop:Generator_TablePropName="Utilizadores" msprop:Generator_RowDeletingName="UtilizadoresRowDeleting" msprop:Generator_RowChangingName="UtilizadoresRowChanging" msprop:Generator_RowEvHandlerName="UtilizadoresRowChangeEventHandler" msprop:Generator_RowDeletedName="UtilizadoresRowDeleted" msprop:Generator_UserTableName="Utilizadores" msprop:Generator_RowChangedName="UtilizadoresRowChanged" msprop:Generator_RowEvArgName="UtilizadoresRowChangeEvent" msprop:Generator_RowClassName="UtilizadoresRow">
+        <xs:element name="Utilizadores" msprop:Generator_TableClassName="UtilizadoresDataTable" msprop:Generator_TableVarName="tableUtilizadores" msprop:Generator_RowChangedName="UtilizadoresRowChanged" msprop:Generator_TablePropName="Utilizadores" msprop:Generator_RowDeletingName="UtilizadoresRowDeleting" msprop:Generator_RowChangingName="UtilizadoresRowChanging" msprop:Generator_RowEvHandlerName="UtilizadoresRowChangeEventHandler" msprop:Generator_RowDeletedName="UtilizadoresRowDeleted" msprop:Generator_RowClassName="UtilizadoresRow" msprop:Generator_UserTableName="Utilizadores" msprop:Generator_RowEvArgName="UtilizadoresRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_utilizador" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_utilizador" msprop:Generator_ColumnPropNameInRow="id_utilizador" msprop:Generator_ColumnPropNameInTable="id_utilizadorColumn" msprop:Generator_UserColumnName="id_utilizador" type="xs:int" />
@@ -497,7 +635,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Professores" msprop:Generator_TableClassName="ProfessoresDataTable" msprop:Generator_TableVarName="tableProfessores" msprop:Generator_RowChangedName="ProfessoresRowChanged" msprop:Generator_TablePropName="Professores" msprop:Generator_RowDeletingName="ProfessoresRowDeleting" msprop:Generator_RowChangingName="ProfessoresRowChanging" msprop:Generator_RowEvHandlerName="ProfessoresRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfessoresRowDeleted" msprop:Generator_RowClassName="ProfessoresRow" msprop:Generator_UserTableName="Professores" msprop:Generator_RowEvArgName="ProfessoresRowChangeEvent">
+        <xs:element name="Professores" msprop:Generator_TableClassName="ProfessoresDataTable" msprop:Generator_TableVarName="tableProfessores" msprop:Generator_TablePropName="Professores" msprop:Generator_RowDeletingName="ProfessoresRowDeleting" msprop:Generator_RowChangingName="ProfessoresRowChanging" msprop:Generator_RowEvHandlerName="ProfessoresRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfessoresRowDeleted" msprop:Generator_UserTableName="Professores" msprop:Generator_RowChangedName="ProfessoresRowChanged" msprop:Generator_RowEvArgName="ProfessoresRowChangeEvent" msprop:Generator_RowClassName="ProfessoresRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_professor" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_professor" msprop:Generator_ColumnPropNameInRow="id_professor" msprop:Generator_ColumnPropNameInTable="id_professorColumn" msprop:Generator_UserColumnName="id_professor" type="xs:int" />
@@ -511,7 +649,7 @@ FROM            Alunos INNER JOIN
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="aluno" msprop:Generator_ColumnVarNameInTable="columnaluno" msprop:Generator_ColumnPropNameInRow="aluno" msprop:Generator_ColumnPropNameInTable="alunoColumn" msprop:Generator_UserColumnName="aluno">
@@ -522,6 +660,135 @@ FROM            Alunos INNER JOIN
                 </xs:simpleType>
               </xs:element>
               <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aluno" msprop:Generator_ColumnVarNameInTable="columnaluno" msprop:Generator_ColumnPropNameInRow="aluno" msprop:Generator_ColumnPropNameInTable="alunoColumn" msprop:Generator_UserColumnName="aluno">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable3" msprop:Generator_TableClassName="DataTable3DataTable" msprop:Generator_TableVarName="tableDataTable3" msprop:Generator_TablePropName="DataTable3" msprop:Generator_RowDeletingName="DataTable3RowDeleting" msprop:Generator_RowChangingName="DataTable3RowChanging" msprop:Generator_RowEvHandlerName="DataTable3RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable3RowDeleted" msprop:Generator_UserTableName="DataTable3" msprop:Generator_RowChangedName="DataTable3RowChanged" msprop:Generator_RowEvArgName="DataTable3RowChangeEvent" msprop:Generator_RowClassName="DataTable3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="professor" msprop:Generator_ColumnVarNameInTable="columnprofessor" msprop:Generator_ColumnPropNameInRow="professor" msprop:Generator_ColumnPropNameInTable="professorColumn" msprop:Generator_UserColumnName="professor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable4" msprop:Generator_TableClassName="DataTable4DataTable" msprop:Generator_TableVarName="tableDataTable4" msprop:Generator_TablePropName="DataTable4" msprop:Generator_RowDeletingName="DataTable4RowDeleting" msprop:Generator_RowChangingName="DataTable4RowChanging" msprop:Generator_RowEvHandlerName="DataTable4RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable4RowDeleted" msprop:Generator_UserTableName="DataTable4" msprop:Generator_RowChangedName="DataTable4RowChanged" msprop:Generator_RowEvArgName="DataTable4RowChangeEvent" msprop:Generator_RowClassName="DataTable4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="professor" msprop:Generator_ColumnVarNameInTable="columnprofessor" msprop:Generator_ColumnPropNameInRow="professor" msprop:Generator_ColumnPropNameInTable="professorColumn" msprop:Generator_UserColumnName="professor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Aulas" msprop:Generator_TableClassName="AulasDataTable" msprop:Generator_TableVarName="tableAulas" msprop:Generator_RowChangedName="AulasRowChanged" msprop:Generator_TablePropName="Aulas" msprop:Generator_RowDeletingName="AulasRowDeleting" msprop:Generator_RowChangingName="AulasRowChanging" msprop:Generator_RowEvHandlerName="AulasRowChangeEventHandler" msprop:Generator_RowDeletedName="AulasRowDeleted" msprop:Generator_RowClassName="AulasRow" msprop:Generator_UserTableName="Aulas" msprop:Generator_RowEvArgName="AulasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="professor" msprop:Generator_ColumnVarNameInTable="columnprofessor" msprop:Generator_ColumnPropNameInRow="professor" msprop:Generator_ColumnPropNameInTable="professorColumn" msprop:Generator_UserColumnName="professor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia" type="xs:dateTime" />
+              <xs:element name="hora_inicio" msprop:Generator_ColumnVarNameInTable="columnhora_inicio" msprop:Generator_ColumnPropNameInRow="hora_inicio" msprop:Generator_ColumnPropNameInTable="hora_inicioColumn" msprop:Generator_UserColumnName="hora_inicio" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="inserir_aulas" msprop:Generator_TableClassName="inserir_aulasDataTable" msprop:Generator_TableVarName="tableinserir_aulas" msprop:Generator_RowChangedName="inserir_aulasRowChanged" msprop:Generator_TablePropName="inserir_aulas" msprop:Generator_RowDeletingName="inserir_aulasRowDeleting" msprop:Generator_RowChangingName="inserir_aulasRowChanging" msprop:Generator_RowEvHandlerName="inserir_aulasRowChangeEventHandler" msprop:Generator_RowDeletedName="inserir_aulasRowDeleted" msprop:Generator_RowClassName="inserir_aulasRow" msprop:Generator_UserTableName="inserir_aulas" msprop:Generator_RowEvArgName="inserir_aulasRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_aula" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_aula" msprop:Generator_ColumnPropNameInRow="id_aula" msprop:Generator_ColumnPropNameInTable="id_aulaColumn" msprop:Generator_UserColumnName="id_aula" type="xs:int" />
+              <xs:element name="id_turma" msprop:Generator_ColumnVarNameInTable="columnid_turma" msprop:Generator_ColumnPropNameInRow="id_turma" msprop:Generator_ColumnPropNameInTable="id_turmaColumn" msprop:Generator_UserColumnName="id_turma" type="xs:int" />
+              <xs:element name="id_professor" msprop:Generator_ColumnVarNameInTable="columnid_professor" msprop:Generator_ColumnPropNameInRow="id_professor" msprop:Generator_ColumnPropNameInTable="id_professorColumn" msprop:Generator_UserColumnName="id_professor" type="xs:int" />
+              <xs:element name="id_hora" msprop:Generator_ColumnVarNameInTable="columnid_hora" msprop:Generator_ColumnPropNameInRow="id_hora" msprop:Generator_ColumnPropNameInTable="id_horaColumn" msprop:Generator_UserColumnName="id_hora" type="xs:int" />
+              <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable5" msprop:Generator_TableClassName="DataTable5DataTable" msprop:Generator_TableVarName="tableDataTable5" msprop:Generator_TablePropName="DataTable5" msprop:Generator_RowDeletingName="DataTable5RowDeleting" msprop:Generator_RowChangingName="DataTable5RowChanging" msprop:Generator_RowEvHandlerName="DataTable5RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable5RowDeleted" msprop:Generator_UserTableName="DataTable5" msprop:Generator_RowChangedName="DataTable5RowChanged" msprop:Generator_RowEvArgName="DataTable5RowChangeEvent" msprop:Generator_RowClassName="DataTable5Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="hora_inicio" msprop:Generator_ColumnVarNameInTable="columnhora_inicio" msprop:Generator_ColumnPropNameInRow="hora_inicio" msprop:Generator_ColumnPropNameInTable="hora_inicioColumn" msprop:Generator_UserColumnName="hora_inicio" type="xs:duration" />
+              <xs:element name="dia" msprop:Generator_ColumnVarNameInTable="columndia" msprop:Generator_ColumnPropNameInRow="dia" msprop:Generator_ColumnPropNameInTable="diaColumn" msprop:Generator_UserColumnName="dia" type="xs:dateTime" />
+              <xs:element name="id_aula" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_aula" msprop:Generator_ColumnPropNameInRow="id_aula" msprop:Generator_ColumnPropNameInTable="id_aulaColumn" msprop:Generator_UserColumnName="id_aula" type="xs:int" />
+              <xs:element name="professor" msprop:Generator_ColumnVarNameInTable="columnprofessor" msprop:Generator_ColumnPropNameInRow="professor" msprop:Generator_ColumnPropNameInTable="professorColumn" msprop:Generator_UserColumnName="professor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="descricao" msprop:Generator_ColumnVarNameInTable="columndescricao" msprop:Generator_ColumnPropNameInRow="descricao" msprop:Generator_ColumnPropNameInTable="descricaoColumn" msprop:Generator_UserColumnName="descricao">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -562,14 +829,21 @@ FROM            Alunos INNER JOIN
       <xs:selector xpath=".//mstns:Professores" />
       <xs:field xpath="mstns:id_professor" />
     </xs:unique>
+    <xs:unique name="DataTable5_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable5" />
+      <xs:field xpath="mstns:id_aula" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Alunos_Turmas" msdata:parent="Turmas" msdata:child="Alunos" msdata:parentkey="id_turma" msdata:childkey="id_turma" msprop:Generator_UserChildTable="Alunos" msprop:Generator_ChildPropName="GetAlunosRows" msprop:Generator_UserRelationName="FK_Alunos_Turmas" msprop:Generator_RelationVarName="relationFK_Alunos_Turmas" msprop:Generator_UserParentTable="Turmas" msprop:Generator_ParentPropName="TurmasRow" />
-      <msdata:Relationship name="FK_HorariosTurma_Tempos" msdata:parent="Tempos" msdata:child="HorariosTurma" msdata:parentkey="id_tempo" msdata:childkey="id_tempo" msprop:Generator_UserChildTable="HorariosTurma" msprop:Generator_ChildPropName="GetHorariosTurmaRows" msprop:Generator_UserRelationName="FK_HorariosTurma_Tempos" msprop:Generator_RelationVarName="relationFK_HorariosTurma_Tempos" msprop:Generator_UserParentTable="Tempos" msprop:Generator_ParentPropName="TemposRow" />
-      <msdata:Relationship name="FK_HorariosTurma_Turmas" msdata:parent="Turmas" msdata:child="HorariosTurma" msdata:parentkey="id_turma" msdata:childkey="id_turma" msprop:Generator_UserChildTable="HorariosTurma" msprop:Generator_ChildPropName="GetHorariosTurmaRows" msprop:Generator_UserRelationName="FK_HorariosTurma_Turmas" msprop:Generator_RelationVarName="relationFK_HorariosTurma_Turmas" msprop:Generator_UserParentTable="Turmas" msprop:Generator_ParentPropName="TurmasRow" />
-      <msdata:Relationship name="FK_Turmas_Tecnicas" msdata:parent="Tecnicas" msdata:child="Turmas" msdata:parentkey="id_tecnica" msdata:childkey="id_tecnica_atual" msprop:Generator_UserChildTable="Turmas" msprop:Generator_ChildPropName="GetTurmasRows" msprop:Generator_UserRelationName="FK_Turmas_Tecnicas" msprop:Generator_ParentPropName="TecnicasRow" msprop:Generator_RelationVarName="relationFK_Turmas_Tecnicas" msprop:Generator_UserParentTable="Tecnicas" />
-      <msdata:Relationship name="FK_Turmas_Professores" msdata:parent="Professores" msdata:child="Turmas" msdata:parentkey="id_professor" msdata:childkey="id_professor" msprop:Generator_UserChildTable="Turmas" msprop:Generator_ChildPropName="GetTurmasRows" msprop:Generator_UserRelationName="FK_Turmas_Professores" msprop:Generator_ParentPropName="ProfessoresRow" msprop:Generator_RelationVarName="relationFK_Turmas_Professores" msprop:Generator_UserParentTable="Professores" />
+      <msdata:Relationship name="FK_Alunos_Turmas" msdata:parent="Turmas" msdata:child="Alunos" msdata:parentkey="id_turma" msdata:childkey="id_turma" msprop:Generator_UserChildTable="Alunos" msprop:Generator_ChildPropName="GetAlunosRows" msprop:Generator_UserRelationName="FK_Alunos_Turmas" msprop:Generator_ParentPropName="TurmasRow" msprop:Generator_RelationVarName="relationFK_Alunos_Turmas" msprop:Generator_UserParentTable="Turmas" />
+      <msdata:Relationship name="FK_HorariosTurma_Tempos" msdata:parent="Tempos" msdata:child="HorariosTurma" msdata:parentkey="id_tempo" msdata:childkey="id_tempo" msprop:Generator_UserChildTable="HorariosTurma" msprop:Generator_ChildPropName="GetHorariosTurmaRows" msprop:Generator_UserRelationName="FK_HorariosTurma_Tempos" msprop:Generator_ParentPropName="TemposRow" msprop:Generator_RelationVarName="relationFK_HorariosTurma_Tempos" msprop:Generator_UserParentTable="Tempos" />
+      <msdata:Relationship name="FK_HorariosTurma_Turmas" msdata:parent="Turmas" msdata:child="HorariosTurma" msdata:parentkey="id_turma" msdata:childkey="id_turma" msprop:Generator_UserChildTable="HorariosTurma" msprop:Generator_ChildPropName="GetHorariosTurmaRows" msprop:Generator_UserRelationName="FK_HorariosTurma_Turmas" msprop:Generator_ParentPropName="TurmasRow" msprop:Generator_RelationVarName="relationFK_HorariosTurma_Turmas" msprop:Generator_UserParentTable="Turmas" />
+      <msdata:Relationship name="FK_Turmas_Tecnicas" msdata:parent="Tecnicas" msdata:child="Turmas" msdata:parentkey="id_tecnica" msdata:childkey="id_tecnica_atual" msprop:Generator_UserChildTable="Turmas" msprop:Generator_ChildPropName="GetTurmasRows" msprop:Generator_UserRelationName="FK_Turmas_Tecnicas" msprop:Generator_RelationVarName="relationFK_Turmas_Tecnicas" msprop:Generator_UserParentTable="Tecnicas" msprop:Generator_ParentPropName="TecnicasRow" />
+      <msdata:Relationship name="FK_Turmas_Professores" msdata:parent="Professores" msdata:child="Turmas" msdata:parentkey="id_professor" msdata:childkey="id_professor" msprop:Generator_UserChildTable="Turmas" msprop:Generator_ChildPropName="GetTurmasRows" msprop:Generator_UserRelationName="FK_Turmas_Professores" msprop:Generator_RelationVarName="relationFK_Turmas_Professores" msprop:Generator_UserParentTable="Professores" msprop:Generator_ParentPropName="ProfessoresRow" />
+      <msdata:Relationship name="FK_inserir_aulas_Professores" msdata:parent="Professores" msdata:child="inserir_aulas" msdata:parentkey="id_professor" msdata:childkey="id_professor" msprop:Generator_UserChildTable="inserir_aulas" msprop:Generator_ChildPropName="Getinserir_aulasRows" msprop:Generator_UserRelationName="FK_inserir_aulas_Professores" msprop:Generator_RelationVarName="relationFK_inserir_aulas_Professores" msprop:Generator_UserParentTable="Professores" msprop:Generator_ParentPropName="ProfessoresRow" />
+      <msdata:Relationship name="FK_inserir_aulas_Tempos" msdata:parent="Tempos" msdata:child="inserir_aulas" msdata:parentkey="id_tempo" msdata:childkey="id_hora" msprop:Generator_UserChildTable="inserir_aulas" msprop:Generator_ChildPropName="Getinserir_aulasRows" msprop:Generator_UserRelationName="FK_inserir_aulas_Tempos" msprop:Generator_RelationVarName="relationFK_inserir_aulas_Tempos" msprop:Generator_UserParentTable="Tempos" msprop:Generator_ParentPropName="TemposRow" />
+      <msdata:Relationship name="FK_inserir_aulas_Turmas" msdata:parent="Turmas" msdata:child="inserir_aulas" msdata:parentkey="id_turma" msdata:childkey="id_turma" msprop:Generator_UserChildTable="inserir_aulas" msprop:Generator_ChildPropName="Getinserir_aulasRows" msprop:Generator_UserRelationName="FK_inserir_aulas_Turmas" msprop:Generator_RelationVarName="relationFK_inserir_aulas_Turmas" msprop:Generator_UserParentTable="Turmas" msprop:Generator_ParentPropName="TurmasRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

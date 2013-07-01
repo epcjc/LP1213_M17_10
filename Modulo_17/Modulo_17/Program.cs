@@ -15,7 +15,7 @@ namespace Modulo_17
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Alunos());
+            Application.Run(new Login());
         }
     }
 }

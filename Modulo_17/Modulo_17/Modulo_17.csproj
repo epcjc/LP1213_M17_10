@@ -14,7 +14,7 @@
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\Samuel\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,9 +24,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -48,9 +49,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>37919AAE367DDC7D9DD9530AAABAD5A3EDE46952</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Modulo_17_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +88,12 @@
     </Compile>
     <Compile Include="Alunos.Designer.cs">
       <DependentUpon>Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aulas.Designer.cs">
+      <DependentUpon>Aulas.cs</DependentUpon>
     </Compile>
     <Compile Include="Eliminar_Alunos.cs">
       <SubType>Form</SubType>
@@ -120,6 +142,12 @@
     <Compile Include="Inserir_Alunos.Designer.cs">
       <DependentUpon>Inserir_Alunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inserir_Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inserir_Aulas.Designer.cs">
+      <DependentUpon>Inserir_Aulas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inserir_Professores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +168,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_Alunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_Alunos.Designer.cs">
+      <DependentUpon>report_Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_professores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_professores.Designer.cs">
+      <DependentUpon>report_professores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_tecnicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_tecnicas.Designer.cs">
+      <DependentUpon>report_tecnicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Turmas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,8 +195,12 @@
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alunos.rdlc" />
     <EmbeddedResource Include="Alunos.resx">
       <DependentUpon>Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aulas.resx">
+      <DependentUpon>Aulas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eliminar_Alunos.resx">
       <DependentUpon>Eliminar_Alunos.cs</DependentUpon>
@@ -173,12 +223,16 @@
     <EmbeddedResource Include="Inserir_Alunos.resx">
       <DependentUpon>Inserir_Alunos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inserir_Aulas.resx">
+      <DependentUpon>Inserir_Aulas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inserir_Professores.resx">
       <DependentUpon>Inserir_Professores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inserir_Turmas.resx">
       <DependentUpon>Inserir_Turmas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Professores.rdlc" />
     <EmbeddedResource Include="Professores.resx">
       <DependentUpon>Professores.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +245,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="report_Alunos.resx">
+      <DependentUpon>report_Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_professores.resx">
+      <DependentUpon>report_professores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_tecnicas.resx">
+      <DependentUpon>report_tecnicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tecnicasd.rdlc" />
     <EmbeddedResource Include="Turmas.resx">
       <DependentUpon>Turmas.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +270,7 @@
     <None Include="Escola_NatacaoDataSet.xss">
       <DependentUpon>Escola_NatacaoDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Modulo_17_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -215,6 +280,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RELATORIO.chm" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

@@ -52,6 +52,7 @@ namespace Modulo_17
                 else
                 {
                     errorProvider1.Dispose(); MessageBox.Show("Inserido com Sucesso");
+                    this.Close();
                 }
                 //MessageBox.Show("Inserido com Sucesso");
                 

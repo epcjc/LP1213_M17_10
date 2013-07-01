@@ -33,7 +33,7 @@ namespace Modulo_17
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Turmas nf = new Turmas();//Object of the form that you want to open
+            Aulas nf = new Aulas();//Object of the form that you want to open
             this.Hide();//Hide cirrent form.
             nf.Show();//Display the next form window
         }
@@ -54,16 +54,15 @@ namespace Modulo_17
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-            Form1 nf = new Form1();//Object of the form that you want to open
+            Login nf = new Login();//Object of the form that you want to open
             this.Hide();//Hide cirrent form.
             nf.Show();//Display the next form window
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AboutBox1 nf = new AboutBox1();//Object of the form that you want to open
-            this.Hide();//Hide cirrent form.
-            nf.Show();//Display the next form window
+            AboutBox1 frm = new AboutBox1();
+            frm.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)

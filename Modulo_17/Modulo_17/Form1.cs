@@ -10,14 +10,14 @@ using System.Data.SqlClient;
 
 namespace Modulo_17
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
         SqlConnection sqlConn;
         private string strConn = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Escola_Natacao.mdf;Integrated Security=True;User Instance=True";
         private string _Sql = string.Empty;
 
         public bool logado = false;
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }

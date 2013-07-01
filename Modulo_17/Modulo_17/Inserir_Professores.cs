@@ -32,6 +32,7 @@ namespace Modulo_17
             {
                 this.professoresTableAdapter.Insert(this.textBox1.Text);
                 errorProvider1.Dispose(); MessageBox.Show("Inserido com Sucesso");
+                this.Close();
             }
             //MessageBox.Show("Inserido com Sucesso");
         }

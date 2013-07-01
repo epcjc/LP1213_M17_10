@@ -39,6 +39,7 @@
             this.professoresTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.ProfessoresTableAdapter();
             this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professoresBindingSource)).BeginInit();
@@ -83,6 +84,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(487, 20);
             this.textBox1.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.textBox1, "Inserir nome do professor");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
@@ -154,5 +156,6 @@
         private Escola_NatacaoDataSetTableAdapters.ProfessoresTableAdapter professoresTableAdapter;
         private Escola_NatacaoDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

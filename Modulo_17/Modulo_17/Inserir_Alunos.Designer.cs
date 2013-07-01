@@ -43,6 +43,7 @@
             this.tableAdapterManager = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TableAdapterManager();
             this.turmasTableAdapter = new Modulo_17.Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.turmasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.escola_NatacaoDataSet)).BeginInit();
@@ -93,6 +94,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.comboBox1, "Selecione a Turma");
             this.comboBox1.ValueMember = "id_turma";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -122,6 +124,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(487, 20);
             this.textBox1.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.textBox1, "Inseir Nome do Aluno");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
@@ -198,5 +201,6 @@
         private Escola_NatacaoDataSetTableAdapters.TurmasTableAdapter turmasTableAdapter;
         private System.Windows.Forms.BindingSource turmasBindingSource;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
